@@ -83,3 +83,9 @@ The **Model dataset** dropdown switches between the original hypothetical coeffi
 **Caveats**: These measurements refer to different years and farm populations; they are not a matched trial. The USDA figure is observed farm production, not an autonomous-robot farm outcome. Applied irrigation is not crop evapotranspiration. No regional potato or bean measurements are implied: the calibrated profile uses wheat only. The measured water rate is applied as-is for either irrigation option because a defensible method-specific effect is not yet established. The remaining labor, energy, economic, calorie, stress response and reliability coefficients remain *illustrative*. The optimizer operates over hypothetical capacity configurations using these limited observed anchors, not a proven engineering design.
 
 Run `node --test engine.test.js optimizer.test.js calibration.test.js`.
+
+## v0.4 — Mixed-crop experiment
+
+A new offline-compatible mixed-crop research panel tests potato/wheat/bean land allocations under one shared irrigation, energy and robot capacity constraint. It estimates aggregate annual calories and crude protein (50 g/person/day scenario target). The crop yields, energy, cost, loss curves and protein coefficients are **illustrative**, not validated nutrition/agronomy recommendations. The Arizona wheat observational profile is deliberately **not** extrapolated across crops. The panel searches all 66 allocations at ten-percentage-point increments for the lowest annualized cost mix meeting both modeled thresholds at the current farm size and resource settings. It does not optimize farm size, resilience, dietary completeness or environmental outcomes.
+
+Run `node --test mixed.test.js` for the new model checks.
