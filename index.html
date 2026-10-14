@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Project Abundance · Experimental Farm</title><style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:#e6f2e8;background:#0b1615;font-synthesis:none}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% -10%,#1d3c30 0%,#0b1615 50%);min-height:100vh}button,input,select{font:inherit}button{cursor:pointer} .shell{max-width:1480px;margin:auto;padding:24px 26px 54px}.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:24px}.brand{font-weight:850;letter-spacing:.06em;display:flex;align-items:center;gap:11px;font-size:15px}.mark{width:36px;height:36px;border-radius:10px;background:#baff94;color:#123321;display:grid;place-items:center;font-size:24px}.subbrand{color:#87a59d;font-size:12px;margin-top:4px;font-weight:500}.tag{font-size:11px;letter-spacing:.12em;color:#baff94;background:#1b3126;border:1px solid #315743;padding:9px 11px;border-radius:30px;text-transform:uppercase}.headline{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:19px}h1{font-size:clamp(25px,3vw,43px);letter-spacing:-.045em;line-height:1.1;margin:0 0 10px} .lead{color:#9fb6ab;line-height:1.5;font-size:14px;max-width:710px;margin:0}.buttons{display:flex;gap:9px;flex-wrap:wrap}button{border:1px solid #355447;background:#1b302a;color:#dcebe0;border-radius:10px;padding:10px 13px;font-size:12px;font-weight:720}button:hover{border-color:#a6f28c}button.primary{background:#baff94;color:#16301d;border-color:#baff94}button.secondary{background:#263e34}.layout{display:grid;grid-template-columns:305px minmax(0,1fr) 276px;gap:15px;align-items:start}.panel{background:#122320;border:1px solid #2a4039;border-radius:16px;overflow:hidden}.panelHeader{display:flex;justify-content:space-between;align-items:center;padding:19px 19px 14px}.panelTitle{font-size:14px;font-weight:800}.eyebrow{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#89a396}.controls{padding:0 18px 18px}.control{padding:14px 0;border-bottom:1px solid #263b34}.control:last-child{border:0}.controlHeader{display:flex;justify-content:space-between;gap:10px;margin-bottom:10px}.control label{font-size:12px;color:#b9cbbf}.value{font-size:12px;font-weight:800;color:#d8f3c2;font-variant-numeric:tabular-nums}.control input[type=range]{width:100%;accent-color:#baff94;height:6px;cursor:pointer}.ends{display:flex;justify-content:space-between;font-size:10px;color:#718e82}.choice{width:100%;background:#0c1917;border:1px solid #365047;color:#e7f2e8;padding:10px;border-radius:8px}.central{display:grid;gap:14px}.scene{position:relative;min-height:345px;overflow:hidden;background:linear-gradient(180deg,#243e3e,#28382f)}.sceneTop{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;padding:20px}.pill{background:#0b1c19c7;border:1px solid #52705d;border-radius:30px;padding:7px 10px;font-size:11px;color:#ceecd1}.scene svg{width:100%;height:345px;display:block}.sceneFooter{background:#192d26;border-top:1px solid #365044;padding:10px 18px;display:flex;justify-content:space-between;gap:12px;color:#9fb9ab;font-size:11px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{padding:16px;min-width:0}.metricLabel{color:#90a99d;font-size:11px}.metricBig{font-size:clamp(20px,2.2vw,30px);font-weight:830;letter-spacing:-.045em;margin-top:8px;font-variant-numeric:tabular-nums}.metricBottom{font-size:11px;color:#92a99d;margin-top:5px}.good{color:#baff94}.warn{color:#f8c477}.bars{padding:2px 18px 18px}.barRow{margin:13px 0 17px}.barTop{display:flex;justify-content:space-between;font-size:12px;margin-bottom:8px;color:#bbcfc1}.barTop span:last-child{color:#e5f1e7;font-weight:700}.track{height:9px;border-radius:10px;background:#273d33;overflow:hidden}.fill{height:100%;border-radius:10px;background:#baff94;transition:width .2s}.fill.amber{background:#ffc77d}.insight{padding:13px 15px;border-radius:10px;background:#283c30;border:1px solid #405640;font-size:12px;color:#dbeccf;line-height:1.55;margin:8px 17px 18px}.scenarioBtns{padding:0 16px 14px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.scenarioBtns button{padding:10px 8px}.history{margin-top:16px;padding-bottom:7px}.historyHead{padding:18px 19px 10px;display:flex;justify-content:space-between;align-items:center}.tableWrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}th{text-align:left;font-size:10px;letter-spacing:.06em;color:#86a298;text-transform:uppercase;font-weight:650}td,th{padding:12px 15px;border-top:1px solid #273c35}td{color:#c3d5c8}.nowrap{white-space:nowrap}td button{padding:5px 9px}.empty{padding:21px;color:#8aa59b;font-size:12px}.foot{margin-top:18px;color:#7f9b8f;font-size:11px;line-height:1.6}.legend{padding:0 17px 16px;display:flex;gap:14px;flex-wrap:wrap;color:#9fb3a2;font-size:11px}.dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px}.statsSmall{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 17px 17px}.mini{background:#0d1d19;border:1px solid #2c4136;border-radius:9px;padding:10px}.mini span{display:block;color:#8fa99c;font-size:10px}.mini b{display:block;font-size:15px;margin-top:5px;font-variant-numeric:tabular-nums} .help{cursor:help;color:#81a392} @media(max-width:1150px){.layout{grid-template-columns:290px 1fr}.right{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:14px}.right>.panel{min-width:0}}@media(max-width:780px){.shell{padding:16px 12px}.layout,.right{display:grid;grid-template-columns:1fr}.right{grid-column:auto}.headline{display:block}.buttons{margin-top:15px}.metrics{grid-template-columns:repeat(2,1fr)}.scene svg{height:270px}.scene{min-height:270px}.sceneFooter{flex-wrap:wrap}}@media(max-width:450px){.metrics{grid-template-columns:1fr 1fr}.metric{padding:12px}.sceneTop{padding:12px}}
+</style><style>
+.optimizeGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0 18px 15px}.optControl label{display:block;color:#9fb6ab;font-size:11px;margin-bottom:6px}.optControl select{width:100%}.optActions{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:0 18px 15px;flex-wrap:wrap}.optNote{padding:0 18px 17px;font-size:11px;line-height:1.6;color:#91aa9b}.optResult{margin:0 18px 18px}.optStatus{font-size:12px;color:#d9ebd5;margin-bottom:10px}.optTable{overflow-x:auto} .optTable table{width:100%;white-space:nowrap}.optTable td,.optTable th{padding:10px}.optTable td:first-child{font-weight:700;color:#baff94}@media(max-width:720px){.optimizeGrid{grid-template-columns:1fr}}
+</style></head><body><div class="shell"><div class="nav"><div class="brand"><div class="mark">✳</div><div>PROJECT ABUNDANCE<div class="subbrand">A playable laboratory for a better world</div></div></div><div class="tag">Prototype · v0.3</div></div><div class="headline"><div><div class="eyebrow" style="margin-bottom:10px">Experiment 001 / Autonomous agriculture</div><h1>Can robots feed a community?</h1><p class="lead">Design a farm for 1,000 people in an arid region. Balance land, crops, water, solar power and autonomous labor to test what works.</p></div><div class="buttons"><button id="reset">↺ Reset</button><button id="export">↓ Export data</button><button class="primary" id="save">＋ Save experiment</button></div></div>
+<div class="layout"><section class="panel"><div class="panelHeader"><div class="panelTitle">Design your system</div><span class="eyebrow">Inputs</span></div><div class="controls"><div class="control"><div class="controlHeader"><label for="profile">Model dataset</label></div><select id="profile" class="choice"><option value="illustrative">Original experimental coefficients</option><option value="az-wheat">Arizona wheat · observed anchors</option></select><p id="evidenceNote" style="font-size:11px;line-height:1.5;color:#a6baa9;margin:8px 0 0"></p></div>
+<div class="control"><div class="controlHeader"><label for="crop">Primary crop</label><span class="value" id="cropName">Potatoes</span></div><select id="crop" class="choice"><option value="potatoes">🥔 Potatoes</option><option value="wheat">🌾 Wheat</option><option value="beans">🫘 Beans</option></select></div>
+<div class="control"><div class="controlHeader"><label for="hectares">Farmland</label><span class="value" id="hectaresValue"></span></div><input id="hectares" type="range" min="0" max="600" step="10"><div class="ends"><span>0 ha</span><span>600 ha</span></div></div>
+<div class="control"><div class="controlHeader"><label for="robots">Farm robots</label><span class="value" id="robotsValue"></span></div><input id="robots" type="range" min="0" max="120" step="1"><div class="ends"><span>0 units</span><span>120 units</span></div></div>
+<div class="control"><div class="controlHeader"><label for="solarKW">Solar generation</label><span class="value" id="solarKWValue"></span></div><input id="solarKW" type="range" min="0" max="3000" step="50"><div class="ends"><span>0 kW</span><span>3,000 kW</span></div></div>
+<div class="control"><div class="controlHeader"><label for="waterCapacityM3Day">Water supply per day</label><span class="value" id="waterCapacityM3DayValue"></span></div><input id="waterCapacityM3Day" type="range" min="0" max="6000" step="50"><div class="ends"><span>0 m³</span><span>6,000 m³</span></div></div>
+<div class="control"><div class="controlHeader"><label for="irrigation">Irrigation</label></div><select id="irrigation" class="choice"><option value="drip">Drip irrigation</option><option value="flood">Flood irrigation</option></select></div>
+<div class="control"><div class="controlHeader"><label for="foodWastePct">Post-harvest food loss</label><span class="value" id="foodWastePctValue"></span></div><input id="foodWastePct" type="range" min="0" max="50" step="1"><div class="ends"><span>0%</span><span>50%</span></div></div>
+</div></section>
+<main class="central"><section class="panel scene"><div class="sceneTop"><span class="pill">◉ Desert test site · Arizona</span><span class="pill" id="sceneStatus">● Simulation active</span></div><svg viewBox="0 0 820 345" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustrative isometric map of solar farm, fields, water tanks, and farm robots"><defs><linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#537b7b"/><stop offset="1" stop-color="#a7a97c"/></linearGradient><pattern id="soil" width="27" height="18" patternUnits="userSpaceOnUse"><path d="M0 13Q10 4 27 13" fill="none" stroke="#6e8c48" stroke-width="4" opacity=".75"/></pattern><pattern id="panel" width="23" height="17" patternUnits="userSpaceOnUse"><path d="M0 0H23V17H0z" fill="#254f69" stroke="#77c3bd" stroke-width="1.4"/></pattern></defs><rect width="820" height="345" fill="url(#sky)"/><path d="M0 150L100 90 210 155 340 83 430 142 560 67 700 144 820 90V345H0" fill="#798b68" opacity=".53"/><path d="M0 182L130 141 235 180 377 119 533 175 685 112 820 183V345H0" fill="#6b8264"/><ellipse cx="400" cy="310" rx="410" ry="80" fill="#273f36" opacity=".3"/><path d="M48 237L374 102 759 225 423 365Z" fill="#82795b" stroke="#aab68b" stroke-width="3"/><path d="M70 237L319 135 504 200 259 309Z" fill="#647e3b" stroke="#d9c28a" stroke-width="3"/><path d="M70 237L319 135 504 200 259 309Z" fill="url(#soil)"/><path d="M344 150L485 107 684 184 544 234Z" fill="url(#panel)" stroke="#9ce5d1" stroke-width="4"/><path d="M362 162L501 121M384 178L525 138M404 195L543 156M423 212L562 172" stroke="#a5ead1" stroke-width="2"/><path d="M527 241L642 198 727 235 610 281Z" fill="#566f57" stroke="#bed4a9" stroke-width="3"/><g><ellipse cx="577" cy="218" rx="25" ry="10" fill="#aec0c4"/><rect x="552" y="175" width="50" height="43" fill="#94a9a4"/><ellipse cx="577" cy="175" rx="25" ry="10" fill="#d6e3d6"/><ellipse cx="650" cy="241" rx="25" ry="10" fill="#aec0c4"/><rect x="625" y="198" width="50" height="43" fill="#94a9a4"/><ellipse cx="650" cy="198" rx="25" ry="10" fill="#d6e3d6"/><path d="M603 196L624 214" stroke="#c7dbbb" stroke-width="6"/></g><g id="robotArt"><path d="M232 228L250 220 267 226 248 234Z" fill="#c5f2a2"/><path d="M232 228V239L250 246 267 237V226L248 234Z" fill="#375746"/><circle cx="240" cy="241" r="4" fill="#1e3331"/><circle cx="261" cy="238" r="4" fill="#1e3331"/><path d="M248 220V211" stroke="#d2efb1" stroke-width="2"/><circle cx="248" cy="208" r="3" fill="#baff94"/><path d="M322 265L340 257 357 263 338 271Z" fill="#c5f2a2"/><path d="M322 265V276L340 283 357 274V263L338 271Z" fill="#375746"/><circle cx="330" cy="278" r="4" fill="#1e3331"/><circle cx="351" cy="275" r="4" fill="#1e3331"/></g><path d="M507 304L566 283 590 295 531 320Z" fill="#b1b5a2"/><path d="M516 295L516 266 567 247 568 284Z" fill="#d0d7bd"/><path d="M516 266L553 243 596 259 567 278Z" fill="#879d8c"/><path d="M567 278L596 259V290L568 307Z" fill="#8aa797"/><rect x="548" y="279" width="13" height="14" fill="#315b56"/><text x="58" y="323" fill="#e6e8c7" font-size="12" font-weight="700" letter-spacing="1">AGRICULTURE</text><text x="520" y="93" fill="#e1f7cf" font-size="11" font-weight="700">SOLAR ARRAY</text></svg><div class="sceneFooter"><span>▦ Fields <b id="sceneLand"></b></span><span>⚡ Solar <b id="sceneSolar"></b></span><span>◉ Robots <b id="sceneRobots"></b></span><span>◈ Water <b id="sceneWater"></b></span></div></section>
+<section class="metrics"><div class="panel metric"><div class="metricLabel">People fed / 1,000</div><div class="metricBig" id="peopleFed">—</div><div class="metricBottom" id="coverageText"></div></div><div class="panel metric"><div class="metricLabel">Food produced / year</div><div class="metricBig" id="foodProduced">—</div><div class="metricBottom">Edible harvest before losses</div></div><div class="panel metric"><div class="metricLabel">Annualized cost / person / day</div><div class="metricBig" id="costPerson">—</div><div class="metricBottom">Illustrative amortized cost</div></div></section>
+<section class="panel"><div class="panelHeader"><div class="panelTitle">Resource efficiency</div><span class="eyebrow">Capacity utilization</span></div><div class="bars" id="resourceBars"></div><div class="statsSmall"><div class="mini"><span>Total setup investment</span><b id="capex"></b></div><div class="mini"><span>Annual operating costs</span><b id="opex"></b></div><div class="mini"><span>Annual calorie coverage</span><b id="calories"></b></div><div class="mini"><span>Energy production / year</span><b id="energy"></b></div></div></section></main>
+<div class="right"><section class="panel"><div class="panelHeader"><div class="panelTitle">Stress-test your farm</div><span class="eyebrow">Scenarios</span></div><div class="scenarioBtns"><button data-stress="baseline">☀ Baseline</button><button data-stress="drought">◌ Drought</button><button data-stress="blackout">⚡ Low sunlight</button><button data-stress="breakdown">⚙ Robot failures</button></div><div class="control" style="margin:0 18px"><div class="controlHeader"><label for="waterStressPct">Water supply reduction</label><span class="value" id="waterStressPctValue"></span></div><input id="waterStressPct" type="range" min="0" max="95" step="5"><div class="ends"><span>0%</span><span>95%</span></div></div><div class="control" style="margin:0 18px"><div class="controlHeader"><label for="sunlightPct">Available sunlight</label><span class="value" id="sunlightPctValue"></span></div><input id="sunlightPct" type="range" min="10" max="120" step="5"><div class="ends"><span>10%</span><span>120%</span></div></div><div class="control" style="margin:0 18px 9px"><div class="controlHeader"><label for="reliabilityPct">Equipment reliability</label><span class="value" id="reliabilityPctValue"></span></div><input id="reliabilityPct" type="range" min="10" max="100" step="5"><div class="ends"><span>10%</span><span>100%</span></div></div><div class="insight" id="insight">Explore a scenario to see the bottleneck.</div></section>
+<section class="panel"><div class="panelHeader"><div class="panelTitle">Mission brief</div><span class="eyebrow">Experiment 001</span></div><div style="padding:0 18px 18px;color:#aec2b2;font-size:12px;line-height:1.7"><p><b style="color:#e2f0e1">Goal:</b> Provide at least 100% of a population's annual calories using autonomous farming.</p><p><b style="color:#e2f0e1">Win condition:</b> Reach the calorie target without water, energy or robot labor constraints.</p><p><b style="color:#f7ca7b">Model warning:</b> Illustrative numbers, not field-validated forecasts. One-crop calories ≠ complete nutrition. Costs exclude land, water rights, transport, housing and healthcare.</p></div></section></div>
+</div><section class="panel history" id="optimizerPanel"><div class="historyHead"><div><div class="panelTitle">✦ Experiment 002 — Farm Designer</div><div class="eyebrow" style="margin-top:5px">Automated, explainable configuration search</div></div><span class="tag">Research mode</span></div><div class="optimizeGrid"><div class="optControl"><label for="optGoal">Optimize for</label><select id="optGoal" class="choice"><option value="cost">Lowest annualized cost</option><option value="water">Lowest irrigation demand</option><option value="land">Smallest farmland</option></select></div><div class="optControl"><label for="optScenario">Must withstand</label><select id="optScenario" class="choice"><option value="baseline">Normal operations</option><option value="drought">Severe drought</option><option value="lowSun">Very low sunlight</option><option value="breakdown">Robot breakdowns</option></select></div><div class="optControl"><label for="optLimit">Show designs</label><select id="optLimit" class="choice"><option value="5">Top 5</option><option value="10">Top 10</option></select></div></div><div class="optActions"><button class="primary" id="findDesigns">✦ Find better farm designs</button><span class="eyebrow" id="optimizerStatus" aria-live="polite">Ready to search</span></div><div class="optResult" id="optimizerResults"></div><div class="optNote">Searches discrete configurations using the selected dataset. Arizona wheat anchors are observations, not a validated automated-farm model. Designs must meet annual calorie demand plus at least 98% of modeled water, electricity and robotic labor needs. Only the selected stress scenario is guaranteed in each result; no recommendation represents real-world farm feasibility.</div></section><section class="panel history"><div class="historyHead"><div><div class="panelTitle">Experiment log</div><div class="eyebrow" style="margin-top:5px">Save up to 15 runs to compare designs</div></div><button id="clear">Clear runs</button></div><div class="tableWrap"><table><thead><tr><th>Run</th><th>Crop</th><th>Land</th><th>Robots</th><th>Water stress</th><th>People fed</th><th>Annualized cost</th><th>Action</th></tr></thead><tbody id="history"><tr><td colspan="8" class="empty">No runs saved yet. Design a system and select “Save experiment”.</td></tr></tbody></table></div></section><p class="foot">Project Abundance v0.3 · Local-only, offline-capable experiment. Inputs and model equations are intentionally transparent and should be calibrated with region-specific data before use for real policy, investment, farming or engineering decisions. No information leaves your browser.</p></div>
+<script>/* Project Abundance MVP simulation engine. All coefficients are ILLUSTRATIVE,
+   not calibrated agronomic or engineering predictions. Pure/deterministic. */
+(function (root, factory) {
+  const api = factory();
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  root.AbundanceEngine = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  const CROPS = Object.freeze({
+    potatoes: { label: 'Potatoes', caloriesPerKg: 770, yieldKgHaYr: 26000, waterM3HaYr: 4200, energyKWhHaYr: 1400, laborHoursHaYr: 280, capexHa: 13500, color: '#eeb76b' },
+    wheat: { label: 'Wheat', caloriesPerKg: 3400, yieldKgHaYr: 4200, waterM3HaYr: 3800, energyKWhHaYr: 900, laborHoursHaYr: 115, capexHa: 9200, color: '#f2d684' },
+    beans: { label: 'Beans', caloriesPerKg: 3300, yieldKgHaYr: 2200, waterM3HaYr: 3100, energyKWhHaYr: 1200, laborHoursHaYr: 190, capexHa: 11400, color: '#b7daab' }
+  });
+  // Observational anchors, not a complete autonomous-farm calibration.
+  // USDA NASS 2024 AZ durum wheat: 109 bu/acre; 60 lb/bu standard wheat test weight.
+  // UA Extension: 2023 AZ wheat irrigation applied = 3.4 acre-feet/acre.
+  const AZ_WHEAT = Object.freeze({
+    label:'Arizona durum wheat (observed anchors)',
+    yieldKgHaYr: 109 * 60 * 0.45359237 / 0.40468564224,
+    waterM3HaYr: 3.4 * 1233.48183755 / 0.40468564224,
+    yieldSource:'https://www.nass.usda.gov/Quick_Stats/Ag_Overview/stateOverview.php?state=Arizona&year=2024',
+    waterSource:'https://www.extension.arizona.edu/publication/water-sustainability-indicators-arizonas-small-grains-industry',
+    yieldYear:2024, waterYear:2023
+  });
+  const DEFAULT = Object.freeze({ profile: 'illustrative', population: 1000, hectares: 50, crop: 'potatoes', irrigation: 'drip', solarKW: 500, robots: 8, waterCapacityM3Day: 2700, storageDays: 3, foodWastePct: 15, waterStressPct: 0, sunlightPct: 100, reliabilityPct: 95, year: 1 });
+  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, Number.isFinite(+v) ? +v : lo)); }
+  function sanitize(raw = {}) {
+    const c = { ...DEFAULT, ...raw };
+    c.profile = c.profile === 'az-wheat' ? 'az-wheat' : 'illustrative';
+    if (c.profile === 'az-wheat') c.crop = 'wheat';
+    c.population = clamp(c.population, 1, 100000);
+    c.hectares = clamp(c.hectares, 0, 10000);
+    c.crop = CROPS[c.crop] ? c.crop : DEFAULT.crop;
+    c.irrigation = c.irrigation === 'flood' ? 'flood' : 'drip';
+    c.solarKW = clamp(c.solarKW, 0, 100000);
+    c.robots = clamp(c.robots, 0, 10000);
+    c.waterCapacityM3Day = clamp(c.waterCapacityM3Day, 0, 1000000);
+    c.storageDays = clamp(c.storageDays, 0, 365);
+    c.foodWastePct = clamp(c.foodWastePct, 0, 95);
+    c.waterStressPct = clamp(c.waterStressPct, 0, 100);
+    c.sunlightPct = clamp(c.sunlightPct, 0, 150);
+    c.reliabilityPct = clamp(c.reliabilityPct, 0, 100);
+    return c;
+  }
+  function simulate(raw) {
+    const c = sanitize(raw), crop = c.profile === 'az-wheat' ? {...CROPS.wheat,...AZ_WHEAT} : CROPS[c.crop];
+    const irrigationMultiplier = c.profile === 'az-wheat' ? 1 : (c.irrigation === 'drip' ? .76 : 1);
+    const energyIrrigationFactor = c.irrigation === 'drip' ? 1.17 : 1;
+    const waterDemand = c.hectares * crop.waterM3HaYr * irrigationMultiplier;
+    const availableWater = c.waterCapacityM3Day * 365 * (1 - c.waterStressPct / 100);
+    const waterRatio = waterDemand === 0 ? 1 : Math.min(1, availableWater / waterDemand);
+    const waterYieldFactor = Math.pow(waterRatio, .75);
+    const energyDemand = c.hectares * crop.energyKWhHaYr * energyIrrigationFactor + c.robots * 1800 + 12500;
+    const energySupply = c.solarKW * 1750 * (c.sunlightPct / 100) * (c.reliabilityPct / 100);
+    const energyRatio = energyDemand === 0 ? 1 : Math.min(1, energySupply / energyDemand);
+    const energyYieldFactor = .55 + .45 * energyRatio;
+    const laborDemand = c.hectares * crop.laborHoursHaYr;
+    const robotLaborCapacity = c.robots * 2200 * (c.reliabilityPct / 100);
+    const laborRatio = laborDemand === 0 ? 1 : Math.min(1, robotLaborCapacity / laborDemand);
+    const laborYieldFactor = .4 + .6 * laborRatio;
+    const kgHarvest = c.hectares * crop.yieldKgHaYr * waterYieldFactor * energyYieldFactor * laborYieldFactor;
+    const annualCalories = kgHarvest * crop.caloriesPerKg * (1 - c.foodWastePct / 100);
+    const neededCalories = c.population * 2400 * 365;
+    const nutritionCoverage = neededCalories > 0 ? annualCalories / neededCalories : 0;
+    const peopleFed = Math.min(c.population, Math.floor(annualCalories / (2400 * 365)));
+    const capex = c.hectares * crop.capexHa + c.solarKW * 1100 + c.robots * 32000 + c.waterCapacityM3Day * 750 + c.storageDays * c.population * 16;
+    const operatingCostYr = c.hectares * 1800 + c.robots * 4500 + c.solarKW * 18 + c.waterCapacityM3Day * 365 * .12;
+    const annualizedCost = capex / 15 + operatingCostYr;
+    const costPerCoveredPersonDay = peopleFed ? annualizedCost / peopleFed / 365 : null;
+    const warnings = [];
+    if (waterRatio < .98) warnings.push('Water supply constrains harvest');
+    if (energyRatio < .98) warnings.push('Electricity supply constrains operations');
+    if (laborRatio < .98) warnings.push('Robot labor constrains harvest');
+    if (nutritionCoverage < 1) warnings.push('Annual calories fall short of demand');
+    if (c.profile === 'az-wheat') warnings.push('Observed wheat anchors only; robot, power, loss response, and costs remain hypothetical; irrigation-method gains not calibrated');
+    if (warnings.length === 0) warnings.push('No modeled bottleneck detected');
+    return {
+      input: c, peopleFed, coveragePct: nutritionCoverage * 100, kgHarvest, annualCalories, neededCalories,
+      waterDemand, availableWater, waterRatio, energyDemand, energySupply, energyRatio,
+      laborDemand, robotLaborCapacity, laborRatio, capex, operatingCostYr, annualizedCost,
+      costPerCoveredPersonDay, warnings,
+      modelVersion: c.profile === 'az-wheat' ? '0.3-az-wheat-observations' : '0.1-illustrative',
+      evidence: c.profile === 'az-wheat' ? AZ_WHEAT : null,
+      assumptions: {kcalPerPersonDay:2400, solarKWhPerKWYear:1750, robotHoursPerYear:2200, yearsCapexAmortization:15}
+    };
+  }
+  function sweep(raw, key, values) { return values.map(value => ({value, result:simulate({...raw,[key]:value})})); }
+  return { CROPS, AZ_WHEAT, DEFAULT, sanitize, simulate, sweep };
+});
+</script><script>
+/* Project Abundance Experiment 002: reproducible, bounded design search.
+   Works with the illustrative engine. NOT a validated farm design tool. */
+(function(root,factory){
+  const engine=typeof module!=='undefined' && module.exports ? require('./engine') : root.AbundanceEngine;
+  const api=factory(engine);
+  if(typeof module!=='undefined' && module.exports) module.exports=api;
+  root.AbundanceOptimizer=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(engine){
+  'use strict';
+  const {simulate,DEFAULT,CROPS}=engine;
+  const SCENARIOS=Object.freeze({
+    baseline: {label:'Normal operations',stress:{waterStressPct:0,sunlightPct:100,reliabilityPct:95}},
+    drought: {label:'65% water reduction',stress:{waterStressPct:65,sunlightPct:100,reliabilityPct:95}},
+    lowSun: {label:'75% sunlight reduction',stress:{waterStressPct:0,sunlightPct:25,reliabilityPct:95}},
+    breakdown: {label:'65% robot reliability loss',stress:{waterStressPct:0,sunlightPct:100,reliabilityPct:35}}
+  });
+  const finite=(v,fallback)=>Number.isFinite(+v)?+v:fallback;
+  function optimize(raw={},options={}){
+    const base=simulate({...DEFAULT,...raw}).input;
+    const goal=options.goal==='water'?'water':options.goal==='land'?'land':'cost';
+    const scenarioKey=SCENARIOS[options.scenario]?options.scenario:'baseline';
+    const stress=SCENARIOS[scenarioKey].stress;
+    const cap=Math.max(1,Math.min(25,Math.floor(finite(options.limit,5))));
+    const maxHectares=Math.max(10,Math.min(600,finite(options.maxHectares,600)));
+    const maxWater=Math.max(0,Math.min(6000,finite(options.maxWater,6000)));
+    const maxSolar=Math.max(0,Math.min(3000,finite(options.maxSolar,3000)));
+    const maxRobots=Math.max(0,Math.min(120,finite(options.maxRobots,120)));
+    const target=base.population*2400*365;
+    const tested=[];
+    let evaluated=0,feasible=0;
+    // Real discrete capacities are derived from each crop's requirements, then
+    // stress-adjusted and scaled. This avoids cherry-picking only arbitrary
+    // slider values and makes the search deterministic and reviewable.
+    const landSteps=[];
+    for(let land=10;land<=maxHectares;land+=10) landSteps.push(land);
+    for(const cropKey of Object.keys(CROPS)){
+      const crop=CROPS[cropKey];
+      for(const irrigation of ['drip','flood']){
+        for(const hectares of landSteps){
+          const waterRequired=hectares*crop.waterM3HaYr*(irrigation==='drip'?.76:1);
+          const usableWaterFrac=1-stress.waterStressPct/100;
+          const reqWater=usableWaterFrac>0?waterRequired/(365*usableWaterFrac):Infinity;
+          const laborRequired=hectares*crop.laborHoursHaYr;
+          const reqRobots=laborRequired/(2200*(stress.reliabilityPct/100));
+          for(const waterFactor of [0.8,1,1.2]){
+            // For very small resource needs, allow zero only when justified.
+            const waterCapacityM3Day=Math.ceil((reqWater*waterFactor)/10)*10;
+            if(waterCapacityM3Day>maxWater)continue;
+            for(const robotFactor of [0.8,1,1.25]){
+              const robots=Math.ceil(reqRobots*robotFactor);
+              if(robots>maxRobots)continue;
+              const energyRequired=hectares*crop.energyKWhHaYr*(irrigation==='drip'?1.17:1)+robots*1800+12500;
+              const sunFactor=(stress.sunlightPct/100)*(stress.reliabilityPct/100);
+              const reqSolar=sunFactor>0?energyRequired/(1750*sunFactor):Infinity;
+              for(const solarFactor of [0.8,1,1.25]){
+                const solarKW=Math.ceil((reqSolar*solarFactor)/10)*10;
+                if(solarKW>maxSolar)continue;
+                const config={...base,crop:cropKey,irrigation,hectares,robots,solarKW,waterCapacityM3Day,...stress};
+                const result=simulate(config);
+                evaluated++;
+                if(result.annualCalories+1e-5<target || result.waterRatio<0.98 || result.energyRatio<0.98 || result.laborRatio<0.98)continue;
+                feasible++;
+                const score=goal==='cost'?result.annualizedCost:goal==='water'?result.waterDemand:hectares;
+                tested.push({config,result,score,scenario:scenarioKey});
+              }
+            }
+          }
+        }
+      }
+    }
+    tested.sort((a,b)=>a.score-b.score || a.result.annualizedCost-b.result.annualizedCost || a.result.waterDemand-b.result.waterDemand || a.config.hectares-b.config.hectares || a.config.robots-b.config.robots);
+    // Return distinct infrastructure designs. A design may be optimal for
+    // one metric while dominated on another; expose tradeoffs rather than
+    // labeling these as scientifically optimal.
+    const seen=new Set(),recommendations=[];
+    for(const candidate of tested){
+      const key=[candidate.config.crop,candidate.config.irrigation,candidate.config.hectares,candidate.config.robots,candidate.config.solarKW,candidate.config.waterCapacityM3Day].join(':');
+      if(seen.has(key))continue;
+      seen.add(key);
+      recommendations.push(candidate);
+      if(recommendations.length>=cap)break;
+    }
+    return {goal,scenario:scenarioKey,evaluated,feasible,recommendations,modelVersion:'0.1-illustrative',method:'deterministic bounded grid search (10-hectare increments; derived water, robot and solar capacity)'};
+  }
+  return {optimize,SCENARIOS};
+});
+
+</script><script>
+(()=>{'use strict';const {DEFAULT,simulate,CROPS}=AbundanceEngine;let settings={...DEFAULT}, saved=[];const $=id=>document.getElementById(id);const fmt=n=>Number(n).toLocaleString('en-US',{maximumFractionDigits:0});const money=n=>n==null?'—':'$'+Number(n).toLocaleString('en-US',{maximumFractionDigits:2});const controls=['hectares','robots','solarKW','waterCapacityM3Day','foodWastePct','waterStressPct','sunlightPct','reliabilityPct','crop','irrigation','profile'];const formats={hectares:n=>fmt(n)+' ha',robots:n=>fmt(n),solarKW:n=>fmt(n)+' kW',waterCapacityM3Day:n=>fmt(n)+' m³',foodWastePct:n=>n+'%',waterStressPct:n=>n+'%',sunlightPct:n=>n+'%',reliabilityPct:n=>n+'%'};function sync(){controls.forEach(k=>{ $(k).value=settings[k]; if($(k+'Value'))$(k+'Value').textContent=formats[k](settings[k]);});$('cropName').textContent=CROPS[settings.crop].label; $('crop').disabled=settings.profile==='az-wheat'; $('evidenceNote').textContent=settings.profile==='az-wheat'?'Wheat yield: USDA NASS 2024 Arizona durum; irrigation applied: UA Extension 2023 Arizona wheat. Different years and populations; all other parameters remain hypothetical. No measured drip savings modeled.':'All yields and irrigation values are hypothetical. Select Arizona wheat for documented observational anchors.';}
+function render(){sync();const r=simulate(settings);$('peopleFed').textContent=fmt(r.peopleFed);$('peopleFed').className='metricBig '+(r.peopleFed>=r.input.population?'good':'warn');$('coverageText').textContent=(r.coveragePct>=100?'✓ Target met':'▲ Calorie deficit')+' · '+r.coveragePct.toFixed(1)+'% supply';$('foodProduced').textContent=(r.kgHarvest/1000000).toFixed(2)+'M kg';$('costPerson').textContent=money(r.costPerCoveredPersonDay);$('sceneLand').textContent=fmt(settings.hectares)+' ha';$('sceneSolar').textContent=fmt(settings.solarKW)+' kW';$('sceneRobots').textContent=fmt(settings.robots);$('sceneWater').textContent=fmt(settings.waterCapacityM3Day)+' m³/day';$('sceneStatus').textContent=r.peopleFed>=settings.population?'● Calorie target met':'● Food deficit';$('capex').textContent=money(r.capex);$('opex').textContent=money(r.operatingCostYr);$('calories').textContent=r.coveragePct.toFixed(1)+'%';$('energy').textContent=(r.energySupply/1000000).toFixed(2)+' GWh';const bars=[['Water supply',r.waterRatio,r.availableWater,r.waterDemand,'m³/year'],['Power availability',r.energyRatio,r.energySupply,r.energyDemand,'kWh/year'],['Autonomous labor',r.laborRatio,r.robotLaborCapacity,r.laborDemand,'hours/year']];$('resourceBars').innerHTML=bars.map(([label,ratio,supply,demand,unit])=>'<div class="barRow"><div class="barTop"><span>'+label+'</span><span>'+(ratio*100).toFixed(0)+'% met</span></div><div class="track"><div class="fill '+(ratio<.98?'amber':'')+'" style="width:'+(ratio*100)+'%"></div></div><div class="ends" style="margin-top:6px"><span>'+fmt(supply)+' available</span><span>'+fmt(demand)+' required '+unit+'</span></div></div>').join('');$('insight').innerHTML='<b>Simulation insight</b><br>'+r.warnings.join(' · ')+(r.coveragePct>=100?'<br>Calorie target reached; validate nutrition and assumptions next.':'<br>Adjust the limiting resources to improve coverage.');}
+controls.forEach(k=>$(k).addEventListener('input',e=>{settings[k]=['crop','irrigation','profile'].includes(k)?e.target.value:+e.target.value;if(k==='profile' && settings.profile==='az-wheat'){settings.crop='wheat';settings.irrigation='flood'}render()}));$('reset').onclick=()=>{settings={...DEFAULT};render()};document.querySelectorAll('[data-stress]').forEach(b=>b.onclick=()=>{const s=b.dataset.stress;if(s==='baseline')Object.assign(settings,{waterStressPct:0,sunlightPct:100,reliabilityPct:95});if(s==='drought')Object.assign(settings,{waterStressPct:65,sunlightPct:100,reliabilityPct:95});if(s==='blackout')Object.assign(settings,{waterStressPct:0,sunlightPct:25,reliabilityPct:95});if(s==='breakdown')Object.assign(settings,{waterStressPct:0,sunlightPct:100,reliabilityPct:35});render()});$('save').onclick=()=>{const r=simulate(settings);saved.unshift({id:Date.now()+'-'+Math.random().toString(36).slice(2,6),config:{...settings},result:r});saved=saved.slice(0,15);renderHistory()};$('clear').onclick=()=>{saved=[];renderHistory()};function renderHistory(){const t=$('history');t.replaceChildren();if(!saved.length){const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=8;td.className='empty';td.textContent='No runs saved yet. Design a system and select “Save experiment”.';tr.append(td);t.append(tr);return}saved.forEach((e,i)=>{const tr=document.createElement('tr');[String(saved.length-i),CROPS[e.config.crop].label,fmt(e.config.hectares)+' ha',String(e.config.robots),e.config.waterStressPct+'%',fmt(e.result.peopleFed),money(e.result.annualizedCost)].forEach(x=>{const td=document.createElement('td');td.textContent=x;tr.append(td)});const td=document.createElement('td'),btn=document.createElement('button');btn.textContent='Load';btn.onclick=()=>{settings={...e.config};render();window.scrollTo({top:0,behavior:'smooth'})};td.append(btn);tr.append(td);t.append(tr)})}function download(filename,text,type){const a=document.createElement('a');const url=URL.createObjectURL(new Blob([text],{type}));a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}$('export').onclick=()=>{const runs=saved.length?saved:[{config:{...settings},result:simulate(settings)}];const header=['profile','crop','population','hectares','irrigation','robots','solarKW','waterCapacityM3Day','waterStressPct','sunlightPct','reliabilityPct','peopleFed','coveragePct','kgHarvest','waterDemand','availableWater','energyDemand','energySupply','laborDemand','robotLaborCapacity','capex','operatingCostYr','annualizedCost','modelVersion'];const rows=runs.map(x=>header.map(k=>{const v=x.config[k]??x.result[k];return '"'+String(v??'').replaceAll('"','""')+'"'}).join(','));download('abundance-experiments.csv',[header.join(','),...rows].join('\n'),'text/csv;charset=utf-8')};
+// Experiment 002: bounded, deterministic optimizer; recommendations are inspectable and loadable.
+$('findDesigns').onclick=()=>{
+  const status=$('optimizerStatus'), output=$('optimizerResults');
+  status.textContent='Searching configurations…';
+  // Allow the browser to paint the status before synchronous search.
+  setTimeout(()=>{
+    try{
+      const {optimize}=AbundanceOptimizer;
+      const search=optimize(settings,{goal:$('optGoal').value,scenario:$('optScenario').value,limit:+$('optLimit').value});
+      status.textContent=fmt(search.evaluated)+' designs evaluated · '+fmt(search.feasible)+' met all constraints';
+      output.replaceChildren();
+      if(!search.recommendations.length){output.textContent='No design met the targets within the current search limits. Try a less severe scenario or change the research model.';return;}
+      const wrap=document.createElement('div');wrap.className='optTable';
+      const table=document.createElement('table'),head=document.createElement('thead'),hr=document.createElement('tr');
+      ['Rank','Crop','Land','Robots','Solar','Water/day','Cost/year','Annual water','Calories','Action'].forEach(s=>{const h=document.createElement('th');h.textContent=s;hr.append(h)});
+      head.append(hr);table.append(head);
+      const body=document.createElement('tbody');
+      search.recommendations.forEach((candidate,i)=>{
+        const {config,result}=candidate,tr=document.createElement('tr');
+        [String(i+1),CROPS[config.crop].label,fmt(config.hectares)+' ha',String(config.robots),fmt(config.solarKW)+' kW',fmt(config.waterCapacityM3Day)+' m³',money(result.annualizedCost),fmt(result.waterDemand)+' m³',result.coveragePct.toFixed(0)+'%'].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td)});
+        const td=document.createElement('td'),btn=document.createElement('button');btn.textContent='Load';btn.setAttribute('aria-label','Load design '+(i+1));btn.onclick=()=>{settings={...config};render();document.querySelector('.headline').scrollIntoView({behavior:'smooth'});};td.append(btn);tr.append(td);body.append(tr);
+      });
+      table.append(body);wrap.append(table);output.append(wrap);
+    }catch(error){status.textContent='Search failed';output.textContent=error.message;}
+  },0);
+};
+render();})();
+</script></body></html>
