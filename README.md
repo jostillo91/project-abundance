@@ -89,3 +89,10 @@ Run `node --test engine.test.js optimizer.test.js calibration.test.js`.
 A new offline-compatible mixed-crop research panel tests potato/wheat/bean land allocations under one shared irrigation, energy and robot capacity constraint. It estimates aggregate annual calories and crude protein (50 g/person/day scenario target). The crop yields, energy, cost, loss curves and protein coefficients are **illustrative**, not validated nutrition/agronomy recommendations. The Arizona wheat observational profile is deliberately **not** extrapolated across crops. The panel searches all 66 allocations at ten-percentage-point increments for the lowest annualized cost mix meeting both modeled thresholds at the current farm size and resource settings. It does not optimize farm size, resilience, dietary completeness or environmental outcomes.
 
 Run `node --test mixed.test.js` for the new model checks.
+
+
+## Experiment 004 — Living World (v0.5)
+
+Open `world.html` to play a fictional 100,000-person regional infrastructure scenario. It begins with existing water and electricity capacity, construction resources, labor, a budget, and material replenishment. Select water-network repair, water treatment, solar, robotics manufacturing or desalination projects. Advance time in months to observe materials consumed, labor contention, completed plants, drought shocks and grid disruptions. The world engine is embedded in `world.html` for offline play. All coefficients and the region are **fictional illustrative assumptions**. Results do **not** establish regional feasibility or actual future outcomes.
+
+The dedicated world engine was tested locally with eight passing deterministic and constraint tests before publishing; future work should extract the embedded engine into a standalone module and publish tests in the repository for CI.

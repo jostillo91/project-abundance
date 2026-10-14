@@ -292,4 +292,4 @@ for(const id of ['hectares','robots','solarKW','waterCapacityM3Day','foodWastePc
 get('mixSearch').onclick=()=>{const s=AbundanceMixed.searchMix(currentConfig());get('mixStatus').textContent=s.feasible?'Found '+s.feasible+' feasible allocations / '+s.tested:'No allocation meets both thresholds / '+s.tested+' checked';if(s.top.length){const m=s.top[0].mix;get('mixPotato').value=m.potatoes;get('mixWheat').value=m.wheat;get('mixBeans').value=m.beans;render();}else render();};
 render();
 })();
-</script></body></html>
+</script><div style="position:fixed;bottom:18px;right:18px;z-index:100;padding:13px 18px;border-radius:14px;background:#baff94;box-shadow:0 5px 25px #0008"><a style="color:#123321;font-weight:800;text-decoration:none" href="world.html">🌍 Play Experiment 004 — Living World →</a></div></body></html>
